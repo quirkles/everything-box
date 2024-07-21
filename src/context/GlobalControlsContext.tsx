@@ -22,7 +22,7 @@ export function GlobalControlsProvider({ children }: { children: ReactNode }) {
         map((e) => ({ type: "keydown", event: e })),
       ),
       fromEvent(window, "keyup").pipe(
-        map((e) => ({ type: "keydown", event: e })),
+        map((e) => ({ type: "keyup", event: e })),
       ),
     ).pipe(
       map((e) => {
